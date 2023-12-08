@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Agendamento" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Agendamento" parent="Base.Theme.Agendamento" />
+
+    <style name="style_splash" parent="Theme.AppCompat.NoActionBar">
+        <!--        <item name="android:windowBackground">@drawable/activity_splash</item>-->
+        <!-- <item name="android:windowDisablePreview">true</item>-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--       Layout acima da barra de navegação-->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/splash</item>
+    </style>
+
+</resources>

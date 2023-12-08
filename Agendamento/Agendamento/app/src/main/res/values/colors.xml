@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="black_one">#1C1C1C</color>
+    <color name="black_one_text">#5D5D5D</color>
+    <color name="card_verde">#A0E16F</color>
+    <color name="card_vermelho">#FC2020</color>
+    <color name="splash">#1F46FE</color>
+    <color name="btnclaro">#73C6EA</color>
+    <color name="subtitle">#181461</color>
+    <color name="next">#2A2AC0</color>
+    <color name="next1">#151560</color>
+    <color name="title">#2A2C4D</color>
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="background">#f6faff</color>
+    <color name="alert_title">#4A4A4A</color>
+    <color name="red">#FC2020</color>
+    <color name="text_card">#6B654F</color>
+    <color name="check_on">#2BB236</color>
+    <color name="tab_indicador_unselected">#bbbabe</color>
+    <color name="tab_indicador">#707070</color>
+    <color name="barra_inferior">#1E1E8D</color>
+    <color name="text_serv">#7A7A7A</color>
+</resources>

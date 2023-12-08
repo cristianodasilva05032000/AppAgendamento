@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xves.agendamento">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Agendamento"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ServicosActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/style_splash" />
+        <activity
+            android:name=".ListaProfissionaisActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/style_splash" />
+        <activity
+            android:name=".ListaAgendamentoActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/style_splash" />
+        <activity
+            android:name=".ListaAgendamentoProfissionalActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/style_splash" />
+        <activity
+            android:name=".AgendamentoActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/style_splash" />
+        <activity
+            android:name=".AgradecimentoActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/style_splash" />
+        <activity
+            android:name=".CadastroActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/style_splash" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/style_splash">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".MyBroadcastReceiver" />
+    </application>
+
+</manifest>

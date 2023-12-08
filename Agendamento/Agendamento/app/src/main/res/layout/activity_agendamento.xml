@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".AgendamentoActivity">
+
+    <LinearLayout
+        android:id="@+id/llDados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_above="@+id/llBtnOne"
+        android:layout_marginTop="@dimen/dim_70"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_24"
+            android:layout_marginEnd="@dimen/dim_24"
+            android:layout_marginTop="@dimen/dim_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitleOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/dim_20"
+                android:textColor="@color/title"
+                android:text="Agendamento"/>
+
+            <TextView
+                android:id="@+id/txtSubTitleOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dim_20"
+                android:textSize="@dimen/dim_12"
+                android:alpha="0.6"
+                android:textColor="@color/title"
+                android:text="Informe a data e hora:"/>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dim_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dim_20"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="1dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:id="@+id/fundo_card1"
+                                android:layout_width="match_parent"
+                                android:layout_height="57dp"
+                                android:layout_gravity="center"
+                                android:background="#FFFFFF"
+                                android:gravity="start"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+                                    <EditText
+                                        android:id="@+id/edtData"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:background="@android:color/transparent"
+                                        android:hint="Data"
+                                        android:inputType="textWebEditText"
+                                        android:padding="14dp"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="#9E9E9E" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="1dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:id="@+id/fundo_card3"
+                                android:layout_width="match_parent"
+                                android:layout_height="57dp"
+                                android:layout_gravity="center"
+                                android:background="#FFFFFF"
+                                android:gravity="start"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+                                    <EditText
+                                        android:id="@+id/edtHora"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:background="@android:color/transparent"
+                                        android:hint="Hora"
+                                        android:inputType="textEmailAddress"
+                                        android:padding="14dp"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="#9E9E9E" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/dim_24"
+        android:layout_marginEnd="@dimen/dim_24"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/llBtnOne"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dim_50">
+
+        <Button
+            android:id="@+id/btnAgendar"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginStart="@dimen/dim_5"
+            android:layout_marginEnd="@dimen/dim_5"
+            android:background="@drawable/botao_azul"
+            android:text="Agendar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="@dimen/dim_60"
+        android:layout_height="@dimen/dim_50"
+        android:layout_marginTop="@dimen/dim_15"
+        android:padding="@dimen/dim_15"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_voltar" />
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/splash"
+        android:visibility="gone" />
+
+</RelativeLayout>
